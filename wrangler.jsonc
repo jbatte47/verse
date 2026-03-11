@@ -1,0 +1,15 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "main": ".open-next/worker.js",
+  "name": "verse",
+  "compatibility_date": "2026-03-10",
+  "compatibility_flags": ["nodejs_compat"],
+  "assets": {
+    "directory": ".open-next/assets",
+    "binding": "ASSETS"
+  }
+  // Future: Add KV, D1, and R2 bindings here for content storage
+  // "kv_namespaces": [{ "binding": "CONTENT_KV", "id": "..." }],
+  // "d1_databases": [{ "binding": "CONTENT_DB", "database_name": "verse-content", "database_id": "..." }],
+  // "r2_buckets": [{ "binding": "MEDIA_BUCKET", "bucket_name": "verse-media" }]
+}

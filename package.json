@@ -1,23 +1,38 @@
 {
   "name": "verse",
-  "version": "0.0.0",
-  "main": "index.js",
-  "repository": "git@github:jbatte47/verse",
-  "author": "John Batte <jbatte@gmail.com>",
-  "license": "GPLv3",
-  "dependencies": {
-    "next": "^12.0.4",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+  "version": "0.1.0",
+  "private": false,
+  "description": "An open source content management tool for world builders and storytellers",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jbatte47/verse"
   },
+  "author": "John Batte <jbatte@gmail.com>",
+  "license": "GPL-3.0",
   "scripts": {
-    "dev": "next",
+    "dev": "next dev",
+    "build": "next build",
     "start": "next start",
-    "build": "next build"
+    "lint": "next lint",
+    "preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview",
+    "deploy": "opennextjs-cloudflare build && opennextjs-cloudflare deploy",
+    "cf-typegen": "wrangler types --env-interface CloudflareEnv cloudflare-env.d.ts"
+  },
+  "dependencies": {
+    "@jbatte47/lattice": "^1.10.0",
+    "next": "^15.2.4",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
   },
   "devDependencies": {
-    "@types/node": "^16.11.11",
-    "@types/react": "^17.0.37",
-    "typescript": "^4.5.2"
+    "@opennextjs/cloudflare": "^1.0.0",
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "autoprefixer": "^10.4.0",
+    "postcss": "^8.4.0",
+    "tailwindcss": "^3.4.0",
+    "typescript": "^5.7.0",
+    "wrangler": "^4.0.0"
   }
 }

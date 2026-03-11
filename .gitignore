@@ -168,5 +168,10 @@ sketch
 # Support for Project snippet scope
 !.vscode/*.code-snippets
 
+# OpenNext / Cloudflare
+.open-next/
+.wrangler/
+wrangler-log/
+
 # End of https://www.toptal.com/developers/gitignore/api/nextjs,react,node,visualstudiocode
 
